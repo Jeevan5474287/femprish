@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Femprish  Issues</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Poppins:ital,wght@0,100;0,300;1,400&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet">
+  <style>
+   body{
+    background-color: rgb(255, 255, 255);
+   }
+
+    header {
+      /* background-color: #ffffff; */
+      color:black;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    .issue {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+     #issueDescription{
+        height: 100px;
+     }
+     #submitbutton{
+       
+       width: 300px;
+     }
+     
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('issueForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Get form values
+        var title = document.getElementById('issueTitle').value;
+        var description = document.getElementById('issueDescription').value;
+
+        // Create new issue element
+        var issueElement = document.createElement('div');
+        issueElement.className = 'issue';
+
+        var titleElement = document.createElement('h2');
+        titleElement.textContent = title;
+
+        var descriptionElement = document.createElement('p');
+        descriptionElement.textContent = description;
+
+        issueElement.appendChild(titleElement);
+        issueElement.appendChild(descriptionElement);
+
+        // Add issue element to the issue list
+        var issueList = document.getElementById('issueList');
+        issueList.appendChild(issueElement);
+
+        // Clear form fields
+        document.getElementById('issueTitle').value = '';
+        document.getElementById('issueDescription').value = '';
+      });
+    });
+  </script>
+</head>
+<body>
+     <nav>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Feminism Logo">
+      <h2>Femprish Website</h2>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+   
+      <li><a href="issues.html">Issues</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <header>
+    <h1> Please Tell us what issues you are facing</h1>
+  
+  </header>
+  
+  <main>
+    <form id="issueForm">
+      <label for="issueTitle">Title:</label>
+      <input type="text" id="issueTitle" required>
+      
+      <label for="issueDescription">Description:</label>
+      <textarea id="issueDescription" required></textarea>
+      
+      <button id="submitbutton" type="submit">Submit Issue</button>
+      <hr>
+      <h1>Submited Issues</h1>
+     
+    </form>
+    
+    <div id="issueList"></div>
+  </main>
+  <footer class="footer">
+    <div class="contact">
+      <p>Contact us: <a href="contact.html">femprish@contactus.com</a></p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="privacy">
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 Femprish. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
