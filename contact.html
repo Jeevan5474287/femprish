@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Femprish Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Poppins:ital,wght@0,100;0,300;1,400&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .social-media a {
+      margin-right: 10px;
+    }
+        
+    form {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+   #or{
+    font-size: 40px;
+
+   }
+   .hr-with-letter {
+      position: relative;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .hr-with-letter hr {
+      border: none;
+      border-top: 1px solid #000;
+      height: 1px;
+      margin: 0;
+    }
+
+    .hr-with-letter span {
+      position: absolute;
+      top: -10px;
+      background-color: #fff;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+          <img src="img/logo.jpg" alt="Feminism Logo">
+          <h2>Femprish Website</h2>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+    
+          <li><a href="issues.html">Issues</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  
+  <main>
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>If you have any questions or inquiries, please feel free to reach out to us.</p>
+      
+      <div class="social-media">
+       
+        <a  id="instaa" href="https://www.instagram.com/femprish" target="_blank"><img src="img/insta.jpg" alt="Instagram" width="100px"></a>
+
+       
+      </div>
+      <div class="hr-with-letter">
+        <hr>
+        <span>OR</span>
+      </div>
+    </div>
+    
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="contact">
+      <p>Contact us: <a href="contact.html">femprish@contactus.com</a></p>
+      <p>Phone: 123-456-7890</p>
+    </div>
+    <div class="privacy">
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2023 Femprish. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form values
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+      
+      // Perform form submission action (e.g., send email, store data, etc.)
+      
+      // Clear form fields
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    });
+  </script>
+</body>
+</html>
