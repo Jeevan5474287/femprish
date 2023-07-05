@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Femprish blog</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Poppins:ital,wght@0,100;0,300;1,400&family=Rubik+Moonrocks&display=swap"
+      rel="stylesheet">
+  <style>
+    body{
+      background-color: rgb(1, 1, 1);
+    }
+  .b{
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+  .imgb{
+    display: inline;
+    border:5px solidrgb(255, 222, 89);
+
+    
+    height: 580px;
+    width:  560px;
+  }
+  #h111{
+    font-size: 30px;
+    color:rgb(254, 184, 174) ;
+   
+  }
+  </style>
+
+  <script>
+    // JavaScript code
+    // Get the current active page and highlight it in the navbar
+    window.addEventListener("DOMContentLoaded", function () {
+      const currentPath = window.location.pathname;
+      const links = document.querySelectorAll("nav ul li a");
+
+      for (let i = 0; i < links.length; i++) {
+        const link = links[i];
+        if (link.getAttribute("href") === currentPath) {
+          link.classList.add("active");
+        }
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/logo.jpg" alt="Feminism Logo">
+      <h2>Femprish Website</h2>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+
+      <li><a href="issues.html">Issues</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- <h1 #h111>Empowering Perspectives: Unveiling the Path to Equality</h1>
+  <section id="s"> -->
+  <div class="b">
+    <img class="imgb" src="img/1.jpg" alt="">
+    <img class="imgb" src="img/2.jpg" alt="">
+    <img class="imgb" src="img/3.jpg" alt="">
+    <img class="imgb" src="img/4.jpg" alt="">
+    <img class="imgb" src="img/5.jpg" alt="">
+    <img class="imgb"  src="img/6.jpg" alt="">
+  </div>
+</section>
+
+  
+
+</body>
+
+</html>
